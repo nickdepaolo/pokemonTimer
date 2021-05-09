@@ -35,8 +35,7 @@
 }
 @keyframes dropOut {
     0% {filter: contrast(0); opacity: 0;}
-
-    8%{opacity: 1;}
+    10%{opacity: 1;}
     50%{}
     90%{filter: contrast(0);}
     100% {filter: contrast(1);}

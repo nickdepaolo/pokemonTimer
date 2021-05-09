@@ -48,10 +48,21 @@
   animation: dropOut2 12s;
 }
 @keyframes dropOut2 {
-  0% {color: white;}
+  0% {opacity: 0;}
   40%{}
   50%{}
-  90%{color: white;}
-  100% {color: black;}
+  90%{opacity: 0;}
+  100% {opacity: 1;}
 }
 
+.count {
+  animation: dropCount .2s;
+}
+
+@keyframes dropCount {
+  0% {opacity: 0;}
+  5%{}
+  50%{}
+  99%{opacity: 0;}
+  100% {opacity: 1;}
+}

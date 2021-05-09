@@ -31,11 +31,12 @@
 .pokeImg {
   width: 500px;
   filter: contrast(1);
-  animation: dropOut  12s;
+  animation: dropOut  11s;
 }
 @keyframes dropOut {
-    0% {filter: contrast(0);}
-    40%{}
+    0% {filter: contrast(0); opacity: 0;}
+
+    8%{opacity: 1;}
     50%{}
     90%{filter: contrast(0);}
     100% {filter: contrast(1);}
@@ -45,7 +46,7 @@
   font-family: 'Press Start 2P', cursive;
   text-transform: uppercase;
   margin-top: -50px;
-  animation: dropOut2 12s;
+  animation: dropOut2 11s;
 }
 @keyframes dropOut2 {
   0% {opacity: 0;}
@@ -56,16 +57,18 @@
 }
 
 .count {
-  animation: dropCount .8s;
+  animation: dropCount 10s;
   font-family: 'Press Start 2P', cursive;
   font-size: 6em;
   color: #FF0000;
+  opacity: 0;
 }
 
 @keyframes dropCount {
   0% {opacity: 0;}
-  5%{}
-  50%{opacity: 0;}
-  90%{opacity: .5;}
-  100% {opacity: 1;}
+  2%{opacity: 0;}
+  20%{opacity: 1;}
+  50%{opacity: 1;}
+  90%{opacity: 1;}
+  100% {opacity: 0;}
 }

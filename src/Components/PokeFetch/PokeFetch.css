@@ -57,6 +57,9 @@
 
 .count {
   animation: dropCount .8s;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 6em;
+  color: #FF0000;
 }
 
 @keyframes dropCount {

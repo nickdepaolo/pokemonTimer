@@ -30,11 +30,28 @@
 
 .pokeImg {
   width: 500px;
+  filter: contrast(1);
+  animation: dropOut  12s;
 }
+@keyframes dropOut {
+    0% {filter: contrast(0);}
+    40%{}
+    50%{}
+    90%{filter: contrast(0);}
+    100% {filter: contrast(1);}
+ }
 
 .pokeName {
   font-family: 'Press Start 2P', cursive;
   text-transform: uppercase;
   margin-top: -50px;
+  animation: dropOut2 12s;
+}
+@keyframes dropOut2 {
+  0% {color: white;}
+  40%{}
+  50%{}
+  90%{color: white;}
+  100% {color: black;}
 }
 

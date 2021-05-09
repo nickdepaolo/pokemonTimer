@@ -56,7 +56,7 @@
 }
 
 .count {
-  animation: dropCount .5s;
+  animation: dropCount .8s;
 }
 
 @keyframes dropCount {
